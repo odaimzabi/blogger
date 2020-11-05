@@ -1,0 +1,13 @@
+
+mutation PostComment($details:String!,$blogId:Float!,$postId:Float!){
+  postComment(details:$details,blogId:$blogId,postId:$postId){
+    id
+   	blogId
+    details
+		userId
+  	comments{
+		details
+    username
+    }
+  }
+}

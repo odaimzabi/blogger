@@ -1,0 +1,6 @@
+mutation Like($id:Float!){
+    likePost(postId:$id){
+        userId
+        hasLiked
+    }
+}

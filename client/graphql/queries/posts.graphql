@@ -1,0 +1,18 @@
+ 
+
+query posts($blogId:Float!,$postId:Float){
+    fetchPosts(blogId:$blogId,postId:$postId){
+        blogId
+        id
+        title
+        details
+        comments{
+            details
+            username
+        }
+        Likes{
+            userId
+            hasLiked
+        }
+    }
+}

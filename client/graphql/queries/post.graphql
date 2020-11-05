@@ -1,0 +1,14 @@
+
+query FetchPost($postId:Float){
+fetchPost(postId:$postId){
+    id
+    userId
+    blogId
+    title
+    details
+    comments{
+      details
+      username
+    }
+  }
+}
